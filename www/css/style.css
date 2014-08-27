@@ -1,0 +1,70 @@
+
+
+.ui-page .ui-header {
+background: #8e44ad;
+color: #FFF;
+text-shadow: none;
+position: fixed;
+top: 0;
+z-index: 9;
+width: 100%;
+}
+
+
+.main-page{
+padding-top: 40px;
+}
+
+.ui-page .ui-footer{
+	font-size: .7em;
+	color: #777;
+	padding: 1em 0;
+}
+
+
+
+.index-page{
+	text-align: center;
+	padding: 3em 0;
+}
+
+.form-action  .ui-btn.ui-shadow{
+	background: #034C7C;
+	color: #FFF;
+	text-shadow: none;
+	margin: 1em 0 0 0;
+}
+
+.form-action  .ui-btn.ui-shadow:hover{
+	background: #0D71B3;
+	color: #FFF;
+	text-shadow: none;
+}
+
+form{
+	padding: 1.5em;
+	margin: 1em 0;
+	border: 1px solid #DDD;
+	background: #EEE;
+}
+
+.form-item {
+	overflow: hidden;
+	clear: both;
+}
+
+.form-item  label{
+	float: left;
+	width: 49%;
+	margin: 16px 0;
+}
+
+.form-action{
+	clear: both;
+	overflow: hidden;
+}
+
+.form-item  .fields{
+	float: right;
+	width: 50%;
+}

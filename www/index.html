@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mobile App</title>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.mobile.min.js"></script>	
+	
+ 
+    <link rel="stylesheet" href="css/jquery.mobile.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<section class="wrap">
+
+	<header>Welcome</header>
+	<!-- Start of first page -->
+	
+	<div data-role="page" id="foo">
+
+		<div data-role="header">
+			<h1>CLX Login</h1>
+		</div>
+
+		<div role="main" class="ui-content main-page index-page">
+		<div id="one" class="ui-body-d ui-content">
+			  
+		
+			    <form>
+					<label for="text-1">User Name:</label>
+					<input type="text" name="text-1" class="username" id="username" />
+					<label for="text-3">Password:</label>
+					<input type="text" data-clear-btn="true" class="password" name="text-3" id="password" >
+					<a href="#login"  class="ui-btn ui-shadow" type="submit"  id="loginclick" onClick="">login</a>
+
+				</form>
+		
+			  </div>
+		</div>
+
+	</div>
+	
+		<!-- Start of first page -->
+	
+	<div data-role="page" id="captureitems">
+
+		<div data-role="header">
+			<h1>Capture</h1>
+		</div>
+
+		<div role="main" class="ui-content main-page index-page">
+		<div id="one" class="ui-body-d ui-content">
+			  
+		
+			    <form>
+					<label for="text-1">Counterpart:</label>
+					<input type="text" name="text-1" class="counterpart" id="counterpart" />
+				
+				</form>
+		
+			  </div>
+		</div>
+
+	</div>
+	
+
+	<!-- Start of second page -->
+	
+	<div data-role="page" class="main-page" id="login">
+
+		<div data-role="header" >
+			<h1 id="authuser"></h1>
+		</div>
+		
+		<div role="main" class="ui-content">
+
+			<div data-role="tabs" id="tabs">
+			  <div data-role="navbar">
+			    <ul>
+			      <li><a href="#one" data-ajax="false">Capture</a></li>
+			      <li><a href="#two" data-ajax="false">Process</a></li>
+			    </ul>
+			  </div>
+			  <div id="one" class="ui-body-d ui-content">
+			  
+			  <div class="form-item">
+						
+						<div class="view" >
+							<select>
+								<option>Physical Fixed</option>
+								<option>Swap</option>
+								<option>Futures</option>
+								<option>Financial Swap</option>
+								<option>physical Options</option>
+								
+								
+							</select>
+						</div>
+						<button class="view"  id="capturebtn"  >Go</button>
+						
+					</div>
+					
+					
+			  
+			  </div>
+			  <div id="two">
+			    <form>
+					
+					<div class="form-item">
+						<label for="text-3">Location:</label>
+						<div class="fields">
+							<select>
+								<option>India-Delhi</option>
+								<option>India-Kolkatta</option>
+								<option>India-Pune</option>
+								<option>India-Kochi</option>
+								<option>India-Tvm</option>
+								<option>India-Mumbia</option>
+								<option>India-punchab</option>
+								
+							</select>
+						</div>
+						
+					</div>
+					
+					<div class="form-item">
+						<label for="text-3">MTM Curve:</label>
+						<div class="fields">
+					
+					<select>
+								<option>0.5% Oil Curve</option>
+								<option>India-Kolkatta</option>
+								<option>India-Pune</option>
+								<option>India-Kochi</option>
+								<option>India-Tvm</option>
+								<option>India-Mumbia</option>
+								<option>India-punchab</option>
+								
+							</select>
+					
+						</div>
+					</div>
+					<div class="form-item">
+						<label for="text-3">Trade Type:</label>
+						<div class="fields">
+							<select>
+								<option value="volvo">Physical Fixed</option>
+                                <option value="saab">Swap</option>
+                                <option value="mercedes">Futures</option>
+                                <option value="audi">Financial Swap</option>
+                                <option value="audi">Physical Option</option>
+                                <option value="audi">Financial Option</option>
+                            </select>
+						</div>
+						
+					</div>
+					
+					<div class="form-item">
+						<label for="text-3">Trade Number:</label>
+						<div class="fields">
+						<select id="tradeselected">
+								<option value="12364">12364</option>
+                                <option value="1156">1156</option>
+                                <option value="23243">23654</option>
+                                <option value="3534534">8795</option>
+                                <option value="34534">87541</option>
+                                <option value="34534">8975</option>
+                            </select>
+						</div>
+					</div>
+					<div class="form-item">
+						<label for="text-3">Delivery Schedule:</label>
+						<div class="fields">
+							<select>
+								<option>ATC</option>
+								<option>PCb</option>
+								<option>ANC</option>
+								<option>PNC</option>
+								<option>KNC</option>
+							</select>
+						</div>
+						
+					</div>
+					<button class="view" id="runprocess"  >Run Process</button>
+					<div class="form-item">
+						<label for="text-3">Process ID:</label>
+						<div class="fields">
+						<label id="tradelabel" for="text-3">14197</label>
+							
+							</div>
+						
+					</div>
+				
+				<div class="form-item">
+						<label for="text-3">Trade:</label>
+						<div class="fields">
+						<label for="text-3">98765</label>
+							
+							</div>
+						
+					</div>
+				<div class="form-item">
+						<label for="text-3">Status:</label>
+						<div class="fields">
+						<label for="text-3">Successfull</label>
+							
+							</div>
+						
+					</div>
+				<div class="form-item">
+						<label for="text-3">User:</label>
+						<div class="fields">
+						<label for="text-3">admin</label>
+							
+							</div>
+						
+					</div>
+				<div class="form-item">
+						<label for="text-3">Start:</label>
+						<div class="fields">
+						<label for="text-3">14-07-2013 01:41</label>
+							
+							</div>
+						
+					</div>
+				<div class="form-item">
+						<label for="text-3">End:</label>
+						<div class="fields">
+						<label for="text-3">15-08-2014 02:51</label>
+							
+							</div>
+						
+					</div>
+				
+				
+			  </div>
+			</div>
+
+			<p><a href="#foo"><< Back to Home</a></p>
+		</div>
+
+	</div>
+	
+</section>
+<script src="js/deviceready.js"></script>
+</body>
+</html>
