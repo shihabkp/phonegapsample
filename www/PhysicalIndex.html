@@ -1,0 +1,243 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+  <head>
+    <title>formDemo.html</title>
+    <meta charset = "UTF-8" />
+    
+    <link rel="stylesheet" href="css/jquery.mobile.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    
+  </head>
+  <body>
+    <div data-role="page" id="sb-site" style="padding-top:0px;">
+		<div data-role="header" data-theme="b"
+			style="font-weight: bold; font: 20px Georgia bold; background: #8e44ad;">
+			<h4>Physical Index</h4>
+		</div>
+		
+		<p>Trade: 922499</p>
+        <div
+		style="-moz-box-shadow: inset 0 0 10px #ccc; -webkit-box-shadow: inset 0 0 10px #ccc; box-shadow: inset 0 0 10px #ccc; padding-top: 20px; padding-bottom: 20px; margin-left: auto; margin-right: auto; width: 100%; border: 1px solid #ccc; border-radius: 20px; margin-top: 20px">
+    <form>
+    <div class="form-item">
+						
+                    <label for="text-3">Trade Date:</label>
+						<div class="fields">
+					<input type="date" name="trade">
+                  			
+						</div>
+					</div>
+					
+					<div class="form-item">
+						<label for="text-3">Internal Company:</label>
+						<div class="fields">
+					
+					<select id="InternalCompany">
+								<option value="1">ITC</option>
+                                <option value="2">ITC Infotech</option>
+								
+							</select>
+					
+						</div>
+					</div>
+					<div class="form-item">
+						<label for="text-3">Counterpart:</label>
+						<div class="fields">
+							<select id="Counterpart">			
+								<option value="1">Mieco</option>
+                                <option value="2">BP</option>
+                                <option value="3">Shell</option>
+                                <option value="4">Reliance</option>
+                                <option value="5">Conco</option>
+                                <option value="6">Philips</option>
+                            </select>
+						</div>
+						
+					</div>
+					
+					<div class="form-item">
+						<label for="text-3">Trader:</label>
+						<div class="fields">
+						<select id="Trader">	
+								<option value="1">Jacob</option>
+                                <option value="2">Siddhartha</option>
+                                <option value="3">Alex</option>
+                                <option value="4">Mathew</option>
+                               
+                            </select>
+						</div>
+					</div>
+					<div class="form-item">
+						<label for="text-3">Strategy:</label>
+						<div class="fields">
+							<select id="Strategy"> 		
+								<option value="1">Crude Oil Trading</option>
+                                <option value="2">Product Trading  </option>
+                               
+							</select>
+						</div>
+						
+					</div>
+														
+					<div class="form-item">
+						<label for="text-3">Trade Template:</label>
+						<div class="fields">
+						<select id="TradeTemplate">	
+								<option value="1">Trade Template</option>
+                                <option value="2">Physical Fixed Trade Template</option>
+                       </select>
+						</div>
+					</div>
+					<div class="form-item">
+						<label for="text-3">Buy / Sell:</label>
+						<fieldset>
+                          <div class="some-class">
+                                 <input type="radio" class="radio" name="x" value="y" id="y" />
+                                 <label for="y">Buy</label>
+                                 <input type="radio" class="radio" name="x" value="z" id="z" />
+                                 <label for="z">Sell</label>
+                         </div>
+                     </fieldset>
+					</div>
+					<div class="form-item">
+						<label for="text-3">Commodity:</label>
+						<div class="fields">
+						<select id="Commodity">		
+						
+								<option value="1">Dubai Crude</option>
+                                <option value="2">Brent Crude</option>
+                                <option value="3">Jet Kero</option>
+                                <option value="4">GO</option>
+                       </select>
+						</div>
+					</div>
+					
+					<div class="form-item">
+						<label for="text-3">Quantity :</label>
+						<div
+						style="display: block; margin-left: auto; margin-right: auto; width: 100%">
+						<input type="number" name="quantity" id="quantity" placeholder="Enter Quantity">
+					</div>
+					</div>
+					
+					<div class="form-item">
+						<label for="text-3">Quantity UOM:</label>
+						<div class="fields">
+						<select id="QuantityUOM">		
+					
+							    <option value="1">BBL</option>
+                                <option value="2">MT</option>
+                                <option value="3">GAL</option>
+                                <option value="4">KG</option>
+                       </select>
+						</div>
+					</div>
+					
+					<div class="form-item">
+						<label for="text-3">Delivery Term:</label>
+						<div class="fields">
+						<select id="QuantityUOM">		
+							    <option value="1">FOB</option>
+                                <option value="2">CFR</option>
+                                <option value="3">CIF</option>
+                                <option value="4">DES</option>
+                       </select>
+						</div>
+					</div>
+					
+					<div class="form-item">
+						<label for="text-3">Delivery Location:</label>
+						<div class="fields">
+						<select id="DeliveryLocation">	
+							    <option value="1">Houston</option>
+                                <option value="2">ARA</option>
+                                <option value="3">Fateh</option>
+                                <option value="4">Singapore</option>
+                       </select>
+						</div>
+					</div>
+					
+					<div class="form-item">
+						<label for="text-3">Delivery Schedule:</label>
+						<div class="fields">
+						<select id="DeliverySchedule">	
+							    <option value="1">Monthly</option>
+                                <option value="2">Laycan</option>
+                                <option value="3">Custom</option>
+                                </select>
+						</div>
+					</div>
+					
+					<div class="form-item">
+						<label for="text-3">Delivery Period:</label>
+						<div class="fields">
+						<select id="DeliveryPeriod">
+							    <option value="1">Aug 14</option>
+                                <option value="2">Sep 14</option>
+                                <option value="3">Oct 14</option>
+                         </select>
+						</div>
+					</div>
+					
+					<div class="form-item">
+						<label for="text-3">Price:</label>
+						<div
+						style="display: block; margin-left: auto; margin-right: auto; width: 100%">
+						<input type="number" name="price" id="price" placeholder="Enter Price">
+					</div>
+
+					</div>
+					
+					<div class="form-item">
+						<label for="text-3">Price Ccy:</label>
+						<div class="fields"> 
+						<select id="PriceCcy">
+							    <option value="1">USD</option>
+                                <option value="2">EUR</option>
+                                <option value="3">GBP</option>
+                                <option value="4">JPY</option>
+                         </select>
+						</div>
+					</div>
+					
+					<div class="form-item">
+						<label for="text-3">Price UOM:</label>
+						<div class="fields"> 
+						<select id="PriceUOM"> 
+							    <option value="1">BBL</option>
+                                <option value="2">MT</option>
+                                <option value="3">GAL</option>
+                                <option value="4">KG</option>
+                         </select>
+						</div>
+					</div>
+					
+					<div class="form-item">
+						<label for="text-3">MTM Curve:</label>
+						<div class="fields"> 
+						<select id="MTMCurve"> 
+							    <option value="1">PLT Dubai FWD</option>
+                                <option value="2">PLT Brent FWD</option>
+                                <option value="3">PLT Jet Kero SING FWD</option>
+                                <option value="4">PLT GO SING FWD</option>
+                         </select>
+						</div>
+					</div>
+					
+    </form>
+    </div>
+   
+	<div class="ui-corner-all ui-controlgroup-horizontal"
+						data-inline="true"
+						style="background: #8e44ad;border: none;color: white;font-size: 18px;font-weight: 200;cursor: pointer;transition: box-shadow .4s ease;"
+						data-type="horizontal" data-role="button" data-transition="slide" onclick="window.location.href='#';" >Save</div>
+                    
+                    
+					
+                    <div class="ui-corner-all ui-controlgroup-horizontal"
+						data-inline="true"
+						style="background: #8e44ad;border: none;color: white;font-size: 18px;font-weight: 200;cursor: pointer;transition: box-shadow .4s ease;"
+						data-type="horizontal" data-role="button" data-transition="slide" onclick="window.location.href='#';">Cancel</div>
+    
+  </body>
+</html>
