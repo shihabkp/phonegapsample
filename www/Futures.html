@@ -1,0 +1,206 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+  <head>
+    <title>formDemo.html</title>
+    <meta charset = "UTF-8" />
+    
+    <link rel="stylesheet" href="css/jquery.mobile.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    
+  </head>
+  <body>
+    <div data-role="page" id="sb-site" style="padding-top:0px;">
+		<div data-role="header" data-theme="b"
+			style="font-weight: bold; font: 20px Georgia bold; background: #8e44ad;">
+			<h4>Futures</h4>
+		</div>
+		
+		<p>Trade: 922499</p>
+        <div
+		style="-moz-box-shadow: inset 0 0 10px #ccc; -webkit-box-shadow: inset 0 0 10px #ccc; box-shadow: inset 0 0 10px #ccc; padding-top: 20px; padding-bottom: 20px; margin-left: auto; margin-right: auto; width: 100%; border: 1px solid #ccc; border-radius: 20px; margin-top: 20px">
+    <form><div class="form-item">
+						<label for="text-3">Trade Date:</label>
+						<div class="fields">
+							<input type="date" name="trade">
+						</div>
+						
+					</div>
+					
+					<div class="form-item">
+						<label for="text-3">Internal Company:</label>
+						<div class="fields">
+					
+					<select id="InternalCompany">
+								<option value="1">ITC</option>
+                                <option value="2">ITC Infotech</option>
+								
+							</select>
+					
+						</div>
+					</div>
+										
+					<div class="form-item">
+						<label for="text-3">Trader:</label>
+						<div class="fields">
+						<select id="Trader">	
+								<option value="1">Jacob</option>
+                                <option value="2">Siddhartha</option>
+                                <option value="3">Alex</option>
+                                <option value="4">Mathew</option>
+                               
+                            </select>
+						</div>
+					</div>
+					<div class="form-item">
+						<label for="text-3">Strategy:</label>
+						<div class="fields">
+							<select id="Strategy"> 		
+								<option value="1">Crude Oil Trading</option>
+                                <option value="2">Product Trading  </option>
+                               
+							</select>
+						</div>
+						
+					</div>
+														
+					<div class="form-item">
+						<label for="text-3">Trade Template:</label>
+						<div class="fields">
+						<select id="TradeTemplate">	
+								<option value="1">Futures Trade Template</option>
+                       </select>
+						</div>
+					</div>
+					<div class="form-item">
+						<label for="text-3">Buy / Sell:</label>
+						<fieldset>
+                          <div class="some-class">
+                                 <input type="radio" class="radio" name="x" value="y" id="y" />
+                                 <label for="y">Buy</label>
+                                 <input type="radio" class="radio" name="x" value="z" id="z" />
+                                 <label for="z">Sell</label>
+                         </div>
+                     </fieldset>
+					</div>
+										
+					<div class="form-item">
+						<label for="text-3">Lots:</label>
+						<div
+						style="display: block; margin-left: auto; margin-right: auto; width: 100%">
+						<input type="number" name="lots" id="lots" placeholder="Enter Quantity">
+					</div>
+					</div>
+					
+					<div class="form-item">
+						<label for="text-3">Base Quote:</label>
+						<div class="fields">
+						<select id="Base Quote">		
+					
+							    <option value="1">NYMEX WTI</option>
+                                
+                       </select>
+						</div>
+					</div>
+					<div class="form-item">
+						<label for="text-3">Price:</label>
+						<div
+						style="display: block; margin-left: auto; margin-right: auto; width: 100%">
+						<input type="number" name="price" id="price" placeholder="Enter Price">
+					</div>
+					</div>
+					<div class="form-item">
+						<label for="text-3">Pricing Ccy:</label>
+						<div class="fields">
+						<select id="pricingccy">	
+							    <option value="1">USD</option>
+                                </select>
+						</div>
+					</div>
+					
+					<div class="form-item">
+						<label for="text-3">Pricing UOM:</label>
+						<div class="fields">
+						<select id="pricinguom">	
+							    <option value="1">BBL</option>
+                                </select>
+						</div>
+					</div>
+					
+					<div class="form-item">
+						<label for="text-3">Contract:</label>
+						<div class="fields">
+						<select id="pricingPeriod">
+							    <option value="1">Aug 14</option>
+                                <option value="2">Sep 14</option>
+                                <option value="3">Oct 14</option>
+                                 <option value="3">Nov 14</option>
+                                  <option value="3">Dec 14</option>
+                         </select>
+						</div>
+					</div>
+					
+					<div class="form-item">
+						<label for="text-3">Clearing Broker:</label>
+						<div class="fields">
+						<select id="ClearingBroker">	 
+							    <option value="1">MF Global</option>
+                               </select>
+						</div>
+					</div>
+					
+					<div class="form-item">
+						<label for="text-3">Rate Type:</label>
+						<div class="fields">
+						<select id="Ratetype">	 
+							    <option value="1">Fixed</option>
+                               </select>
+						</div>
+					</div>
+					
+					
+					<div class="form-item">
+						<label for="text-3">Fee:</label>
+						<div
+						style="display: block; margin-left: auto; margin-right: auto; width: 100%">
+						<input type="number" name="fee" id="fee" placeholder="Fee">
+					</div>
+
+					</div>
+					
+					<div class="form-item">
+						<label for="text-3">Fee Ccy:</label>
+						<div class="fields"> 
+						<select id="FeeCcy">
+							    <option value="1">USD</option>
+                                <option value="2">EUR</option>
+                                <option value="3">GBP</option>
+                                </select>
+						</div>
+					</div>
+					
+					<div class="form-item">
+						<label for="text-3">Fee UOM:</label>
+						<div class="fields"> 
+						<select id="FeeUOM"> 
+							    <option value="1">BBL</option>
+                                </select>
+						</div>
+					</div>
+					
+				    </form>
+    </div>
+   
+	<div class="ui-corner-all ui-controlgroup-horizontal"
+						data-inline="true"
+						style="background: #8e44ad;border: none;color: white;font-size: 18px;font-weight: 200;cursor: pointer;transition: box-shadow .4s ease;"
+						data-type="horizontal" data-role="button" data-transition="slide" onclick="window.location.href='#';" >Save</div>
+                    
+                    
+					
+                    <div class="ui-corner-all ui-controlgroup-horizontal"
+						data-inline="true"
+						style="background: #8e44ad;border: none;color: white;font-size: 18px;font-weight: 200;cursor: pointer;transition: box-shadow .4s ease;"
+						data-type="horizontal" data-role="button" data-transition="slide" onclick="window.location.href='#';">Cancel</div>
+    
+  </body>
+</html>
